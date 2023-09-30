@@ -10,6 +10,7 @@ echo "npm version: $(npm -v)"
 
 # Build vuepress project
 echo "==> Start building \n $BUILD_SCRIPT"
+export NODE_OPTIONS=--openssl-legacy-provider
 eval "$BUILD_SCRIPT"
 echo "Build success"
 
